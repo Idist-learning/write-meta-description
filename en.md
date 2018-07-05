@@ -4,13 +4,13 @@
 Tóm tắt: khoảng giữa tháng 5 năm 2018, Google đã quay lại việc sử dụng các đoạn trích ngắn. Dữ liệu của chúng tôi cho thấy việc này đang lan rộng ra và hầu hết các thẻ meta dùng để mô tả đều được cắt bớt về độ dài nằm trong khoảng 155-160 kí tự.
 ```
 
-Quay trở lại tháng 12, Google đã thực hiện một thay đổi đáng kể trong việc hiển thị các đoạn trích ngắn khi tìm kiếm, với công trình nghiên cứu của chúng tôi đã chỉ ra rằng có rất nhiều các đoạn trích vượt quá 300 kí tự. Cuối tuần qua, họ dường như đã quay lại thay đổi đó (Danny Sullivanđã xác nhận một phần điều này trên Twitter ngày May 14). Bên cạnh các câu hỏi hiển nhiên — Giới hạn mới là gì? — Nó khiến bạn tự hỏi phải làm gì để đối phó với các quy tắc khi nó tiếp tục thay đổi.Không ai trong chúng ta có một quả cầu tiên tri, Nhưng tôi sẽ cố gắng trả lời các câu hỏi trên dựa vào những gì chúng a biết hôm nay.
+Quay trở lại tháng 12, Google đã thực hiện một thay đổi đáng kể trong việc hiển thị các đoạn trích ngắn khi tìm kiếm, công trình nghiên cứu của chúng tôi đã chỉ ra rằng có rất nhiều các đoạn trích vượt quá 300 kí tự. Cuối tuần qua, họ dường như đã quay lại thay đổi đó (Danny Sullivanđã xác nhận một phần điều này trên Twitter ngày May 14). Bên cạnh các câu hỏi hiển nhiên — Giới hạn mới là gì? — Nó khiến bạn tự hỏi phải làm gì để đối phó với các quy tắc khi nó tiếp tục thay đổi.Không ai trong chúng ta có một quả cầu tiên tri, Nhưng tôi sẽ cố gắng trả lời các câu hỏi trên dựa vào những gì chúng a biết hôm nay.
 
 ## Dối trá, dối trá trắng trợn, và thống kê...
 
 Tôi đã lấy tất cả các đoạn trích tìm kiếm có sẵn từ MozCast 10K (trang kết quả của Google cho 10.000 từ khóa), vì đó là tập dữ liệu chúng tôi thu thập hàng ngày và có lịch sử phong phú. Có 89.383 đoạn mã hiển thị trên tập dữ liệu đó vào sáng ngày 15 tháng 5.
 
-Tôi có thể nói với bạn rằng, trên toàn bộ tập dữ liệu, độ dài tối thiểu là 6 ký tự, độ dài tối đa là 386, và trung bình là khoảng 159. Điều đó không hữu ích lắm, vì một vài lý do. Đầu tiên, nói với bạn để viết mô tả meta giữa 6–386 ký tự không phải là lời khuyên hữu ích chính xác. Thứ hai, chúng ta đang đối phó với rất nhiều thái cực. Ví dụ: đây là đoạn trích trên tìm kiếm "USMC":
+Tôi có thể nói với bạn rằng, trên toàn bộ tập dữ liệu, độ dài tối thiểu là 6 ký tự, độ dài tối đa là 386, và trung bình là khoảng 159. Điều đó không hữu ích lắm, vì một vài lý do. Đầu tiên, nói với bạn để viết mô tả meta giữa 6–386 ký tự không phải là lời khuyên hữu ích. Thứ hai, chúng ta đang đối phó với rất nhiều trường hợp. Ví dụ: đây là đoạn trích trên tìm kiếm "USMC":
 
 ![](https://d1avok0lzls2w.cloudfront.net/uploads/blog/meta-desc-2018-1-4065.png)
 
@@ -26,7 +26,7 @@ Vì vậy, chúng tôi biết rằng các đoạn mô tả dài hơn vẫn tồn
 
 ## bức tranh toàn cảnh phần 1
 
-Đôi khi, bạn phải để cho dữ liệu cố gắng để nói cho chính nó, với tối thiểu là dỗ dành. Hãy xem xét tất cả các đoạn trích được cắt bỏ (kết thúc bằng "...") và xóa kết quả video (chúng tôi biết từ nghiên cứu trước rằng những đoạn này ngắn hơn một chút). Điều này để lại 42,863 đoạn trích (chỉ bằng một nửa bộ dữ liệu của chúng tôi). Dưới đây là một đồ thị của tất cả các độ dài cắt, thu thập thành 25 thùng ký tự (0-25, 26-50, vv):
+Đôi khi, bạn phải để cho dữ liệu cố gắng để nói về chính nó, với tối thiểu là dỗ dành. Hãy xem xét tất cả các đoạn trích được cắt bỏ (kết thúc bằng "...") và xóa kết quả video (chúng tôi biết từ nghiên cứu trước rằng những đoạn này ngắn hơn một chút). Điều này để lại 42,863 đoạn trích (chỉ bằng một nửa bộ dữ liệu của chúng tôi). Dưới đây là một đồ thị của tất cả các độ dài cắt, thu thập thành 25 thùng ký tự (0-25, 26-50, vv):
 
 ![](https://d1avok0lzls2w.cloudfront.net/uploads/blog/meta-desc-2018-5-4779.png)
 
@@ -48,7 +48,7 @@ Chúng ta có nên quay trở lại với 155 ký tự không? Nếu bạn đã 
 
 ### (1) để google xử lý chúng
 
-Một số trang web không có mô tả meta. Wikipedia xảy ra là một trong số họ. Bây giờ, sự hiểu biết của Google về nội dung của Wikipedia sâu sắc hơn nhiều so với hầu hết các trang web (một phần, nhờ Wikidata), nhưng nhiều trang web làm tốt tiền phạt mà không có thẻ. Nếu lựa chọn của bạn là viết thẻ không hợp lệ, lặp lại hoặc để trống, thì tôi sẽ nói để trống chúng và để Google sắp xếp.
+Một số trang web không có mô tả meta. Wikipedia là một trong số chúng. Bây giờ, sự hiểu biết của Google về nội dung của Wikipedia sâu sắc hơn nhiều so với hầu hết các trang web (một phần, nhờ Wikidata), nhưng nhiều trang web làm tốt tiền phạt mà không có thẻ. Nếu lựa chọn của bạn là viết thẻ không hợp lệ, lặp lại hoặc để trống, thì tôi sẽ nói để trống chúng và để Google sắp xếp.
 
 ### (2) hãy để ... tự rơi vào nơi nó có thể
 
@@ -60,7 +60,7 @@ Bạn có thể quay trở lại và tàn nhẫn hack tất cả các công vi�
 
 ### (4) Viết mô tả thích ứng với độ dài
 
-Có thể viết mô tả hoạt động tốt ở cả hai độ dài không? Tôi nghĩ rằng đó là, với một số chăm sóc và lập kế hoạch. Tôi sẽ không nhất thiết phải đề nghị điều này cho mỗi trang, nhưng có lẽ có một cách để có bánh của chúng tôi và ăn ít nhất một nửa của nó, quá ...
+Có thể viết mô tả hoạt động tốt ở cả hai độ dài không? Tôi nghĩ rằng có, với một số chăm sóc và lập kế hoạch. Tôi sẽ không nhất thiết phải đề nghị điều này cho mỗi trang, nhưng có lẽ có một cách để có bánh của chúng tôi và ăn ít nhất một nửa của nó, quá ...
 
 ## Cách tiếp cận 150/150
 
